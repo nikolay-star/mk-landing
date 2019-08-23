@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="circle" ref="circle">
       <img
-        src="../assets/images/bg-white.svg"
+        src="/images/bg-white.svg"
         class="circle__img"
         alt="background"
       />
@@ -25,7 +25,7 @@
         </h1>
         <div class="main-img">
           <img
-            src="../assets/images/img-logo.svg"
+            src="/images/img-logo.svg"
             alt="Бизнес неваляжка"
           >
         </div>
@@ -86,7 +86,7 @@ export default {
 
 <style lang="scss">
   @import '../assets/styles/variables.scss';
-  @import "../static/fonts/GothamPro/stylesheet.css";
+  @import "../assets/fonts/GothamPro/stylesheet.css";
   @import "../assets/styles/main.scss";
 
   .wrapper{

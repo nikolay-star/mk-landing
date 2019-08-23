@@ -8,8 +8,8 @@
         class="image-roly"
         :class="isHovered ? 'animated wobble' : ''"
       >
-        <img class="mobile-show image-roly__mobile" src="../assets/images/img-roly-poly-static@2x.png" alt="">
-        <img class="mobile-hide" src="../assets/images/img-roly-poly.svg" alt="">
+        <img class="mobile-show image-roly__mobile" src="/images/img-roly-poly-static@2x.png" alt="">
+        <img class="mobile-hide" src="/images/img-roly-poly.svg" alt="">
       </div>
       <div class="image-roly-bg mobile-hide"></div>
       <div
@@ -78,7 +78,7 @@ export default {
 .image .image-roly-bg {
   width: 305px;
   height: 75px;
-  background: url(../assets/images/img-bg.svg) no-repeat;
+  background: url(/images/img-bg.svg) no-repeat;
   background-size: 100%;
   position: absolute;
   z-index: 1;
@@ -96,7 +96,7 @@ export default {
   height: 46px;
   top: 123px;
   left: -53px;
-  background: url(../assets/images/img-light-1.svg) no-repeat;
+  background: url(/images/img-light-1.svg) no-repeat;
   background-size: 100%;
 }
 
@@ -105,7 +105,7 @@ export default {
   height: 69px;
   top: 66px;
   left: -16px;
-  background: url(../assets/images/img-light-2.svg) no-repeat;
+  background: url(/images/img-light-2.svg) no-repeat;
   background-size: 100%;
 }
 
@@ -114,7 +114,7 @@ export default {
   height: 69px;
   right: -28px;
   top: 67px;
-  background: url(../assets/images/img-light-3.svg) no-repeat;
+  background: url(/images/img-light-3.svg) no-repeat;
   background-size: 100%;
 }
 
@@ -123,7 +123,7 @@ export default {
   height: 46px;
   right: -66px;
   top: 123px;
-  background: url(../assets/images/img-light-4.svg) no-repeat;
+  background: url(/images/img-light-4.svg) no-repeat;
   background-size: 100%;
 }
 </style>
