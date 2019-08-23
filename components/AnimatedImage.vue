@@ -4,7 +4,7 @@
       <div
         class="image-roly"
       >
-        <img class="mobile-show image-roly__mobile" src="../assets/images/img-roly-poly-static@2x.png" alt="">
+        <img class="mobile-show image-roly__mobile" src="../assets/images/img-roly-poly-static@2x.svg" alt="">
         <img class="mobile-hide" src="../assets/images/img-roly-poly.svg" alt="">
       </div>
       <div class="image-roly-bg mobile-hide" />
@@ -85,6 +85,10 @@ export default {
 .image .image-roly img {
   height: 100%;
   width: auto;
+}
+
+.image .image-roly .image-roly__mobile {
+  max-width: 120px;
 }
 
 .image .image-roly-bg {
