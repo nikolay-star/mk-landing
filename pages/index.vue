@@ -86,7 +86,7 @@ export default {
 
 <style lang="scss">
   @import '../assets/styles/variables.scss';
-  @import "../assets/fonts/GothamPro/stylesheet.css";
+  @import "../static/fonts/GothamPro/stylesheet.css";
   @import "../assets/styles/main.scss";
 
   .wrapper{
