@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  line-height: 1em;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  font-family: 'Gotham Pro', sans-serif;
+  background: $primary;
+  min-width: 320px;
+  
+  @media (min-width: $md) {
+    overflow: hidden;
+  }
+}
+
+h1{
+  color: red;
+}
+
+.mobile-show{
+  display: block;
+  
+  @media (min-width: $sm) {
+    display: none;
+  }
+}
+
+.mobile-hide{
+  display: none;
+  
+  @media (min-width: $sm) {
+    display: block;
+  }
+}
