@@ -211,7 +211,7 @@ export default {
   }
 
   .img{
-    padding-top: 60px;
+    padding-top: 20px;
     margin: 0 auto 40px;
 
     @media (min-width: $sm) {
@@ -229,7 +229,7 @@ export default {
   }
 
   .date{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-left: $tempPadding;
     font-weight: bold;
     letter-spacing: 1px;
@@ -243,7 +243,7 @@ export default {
 
   .title{
     padding-left: $tempPadding;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     line-height: 1;
 
