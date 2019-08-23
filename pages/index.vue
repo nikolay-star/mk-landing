@@ -216,7 +216,7 @@ export default {
 
     @media (min-width: $sm) {
       padding-top: 0;
-      margin: 0 105px 0 0;
+      margin: 0 125px 0 0;
     }
 
     @media (min-width: $md) {
