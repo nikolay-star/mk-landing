@@ -1,5 +1,15 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/bus-landing/'
+  }
+} : {}
+
 export default {
+  ...routerBase,
   mode: 'universal',
+  generate: {
+    subFolders: true
+  },
   /*
    ** Headers of the page
    */
@@ -7,7 +17,7 @@ export default {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
       {
         hid: 'description',
         name: 'description',

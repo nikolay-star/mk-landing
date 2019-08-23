@@ -16,6 +16,7 @@ body{
   font-family: 'Gotham Pro', sans-serif;
   background: $primary;
   min-width: 320px;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   
   @media (min-width: $md) {
     overflow: hidden;

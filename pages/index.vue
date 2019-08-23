@@ -1,11 +1,11 @@
 <template>
   <div class="wrapper">
-    <div class="circle" ref="circle">
+    <div ref="circle" class="circle">
       <img
         src="../assets/images/bg-white.svg"
         class="circle__img"
         alt="background"
-      />
+      >
     </div>
     <div class="container">
       <div class="img">
@@ -16,12 +16,12 @@
           {{ date }}
         </div>
         <h1 class="title">
-        <span class="title__descr">
-          {{ title.text }}
-        </span>
+          <span class="title__descr">
+            {{ title.text }}
+          </span>
           <span class="title__name">
-          {{ title.name }}
-        </span>
+            {{ title.name }}
+          </span>
         </h1>
         <div class="main-img">
           <img
@@ -43,7 +43,7 @@
         </ul>
 
         <a
-          href="http://roly-poly.com.ua"
+          href="#"
           class="link"
         >
           {{ btnText }}
@@ -51,7 +51,7 @@
       </div>
     </div>
     <a
-      href="http://roly-poly.com.ua"
+      href="#"
       class="link-mobile"
     >
       {{ btnText }}
@@ -231,7 +231,6 @@ export default {
   .date{
     margin-bottom: 40px;
     padding-left: $tempPadding;
-    font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
     color: $dark;
@@ -246,7 +245,7 @@ export default {
     padding-left: $tempPadding;
     margin-bottom: 40px;
     text-transform: uppercase;
-    line-height: 1em;
+    line-height: 1;
 
     @media (min-width: $sm) {
       padding-left: $tempPaddingMd;
@@ -256,8 +255,9 @@ export default {
       display: block;
       font-size: 18px;
       letter-spacing: 1px;
-      color: $gray;
+      color: $dark;
       margin-bottom: 14px;
+      font-weight: normal;
     }
 
     &__name{
@@ -273,10 +273,12 @@ export default {
     margin-bottom: 20px;
     text-transform: uppercase;
     padding-left: $tempPadding;
-    color: $gray;
-    line-height: 1.44em;
+    color: $dark;
+    line-height: 1.44;
     letter-spacing: 1px;
     max-width: 280px;
+    font-weight: normal;
+    font-size: 18px;
 
     @media (min-width: $sm) {
       padding-left: $tempPaddingMd;
