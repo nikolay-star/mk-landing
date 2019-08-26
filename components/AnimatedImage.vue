@@ -4,22 +4,10 @@
       <div
         class="image-roly"
       >
-        <img class="mobile-show image-roly__mobile" src="/images/img-roly-poly-static@2x.png" alt="">
-        <img class="mobile-hide" src="/images/img-roly-poly.svg" alt="">
+        <img class="mobile-show image-roly__mobile" src="../assets/images/img-roly-poly-static@2x.svg" alt="">
+        <img class="mobile-hide" src="../assets/images/img-roly-poly.svg" alt="">
       </div>
       <div class="image-roly-bg mobile-hide" />
-      <div
-        class="image-light image-light-1 mobile-hide"
-      />
-      <div
-        class="image-light image-light-2 mobile-hide"
-      />
-      <div
-        class="image-light image-light-3 mobile-hide"
-      />
-      <div
-        class="image-light image-light-4 mobile-hide"
-      />
 
       <div
         v-for="(el, i) in 4"
@@ -85,6 +73,10 @@ export default {
 .image .image-roly img {
   height: 100%;
   width: auto;
+}
+
+.image .image-roly .image-roly__mobile {
+  max-width: 120px;
 }
 
 .image .image-roly-bg {
