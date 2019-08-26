@@ -1,44 +1,36 @@
 <template>
-  <div
-    @mouseover="isHovered = true"
-    @mouseleave="isHovered = false"
-  >
-    <div class="image" id="roly">
+  <div>
+    <div id="roly" class="image">
       <div
         class="image-roly"
-        :class="isHovered ? 'animated wobble' : ''"
       >
         <img class="mobile-show image-roly__mobile" src="/images/img-roly-poly-static@2x.png" alt="">
         <img class="mobile-hide" src="/images/img-roly-poly.svg" alt="">
       </div>
-      <div class="image-roly-bg mobile-hide"></div>
+      <div class="image-roly-bg mobile-hide" />
       <div
         class="image-light image-light-1 mobile-hide"
-        :class="isHovered ? 'animated heartBeat' : ''"
-      ></div>
+      />
       <div
         class="image-light image-light-2 mobile-hide"
-        :class="isHovered ? 'animated heartBeat' : ''"
-      ></div>
+      />
       <div
         class="image-light image-light-3 mobile-hide"
-        :class="isHovered ? 'animated heartBeat' : ''"
-      ></div>
+      />
       <div
         class="image-light image-light-4 mobile-hide"
-        :class="isHovered ? 'animated heartBeat' : ''"
-      ></div>
+      />
 
       <div
-        v-for='(el, i) in 4'
-        :key='i'
-        class='image-light mobile-hide'
-        :class='{
+        v-for="(el, i) in 4"
+        :key="i"
+        class="image-light mobile-hide"
+        :class="{
           animated: isHovered,
           heartBeat: isHovered,
           [`image-light-${i}`]: true
-        }'
-      ></div>
+        }"
+      />
     </div>
   </div>
 </template>
@@ -57,6 +49,26 @@ export default {
 
 .image {
   position: relative;
+
+  &:hover {
+    .image-roly {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-name: wobble;
+      animation-name: wobble;
+    }
+
+  .image-light {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+  }
+  }
 }
 
 .image .image-roly {
